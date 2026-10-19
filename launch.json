@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "CurbToken",
+    "name": "curb",
+    "symbol": "CURB",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 5000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x3ed212257958724579f13b3dba74a07ac6007903"
+  },
+  "notes": "CurbToken is the curb (CURB) ERC-20 with 18 decimals. Its zero-argument constructor mints 1,000,000,000 tokens once to msg.sender, the launch factory. Transfers have no fee. Holders can burn their own tokens; burnFrom requires allowance. There is no owner or further minting. No application contracts are deployed. pool.initialPrice records provenance; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
